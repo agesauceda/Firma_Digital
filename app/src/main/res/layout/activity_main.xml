@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.firmadigital.Adapter.draw_signature
+        android:id="@+id/firma_digital"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="ESCRIBE LA DESCRIPCION DE TU FIRMA"
+        android:textColor="#FF9800"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#D6D3D3"
+        android:textColorHint="#888585"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="GUARDAR" />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="MOSTRAR FIRMAS" />
+
+</LinearLayout>
